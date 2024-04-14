@@ -1,0 +1,8 @@
+# node_modules
+/node_modules
+/env
+
+# Ignore user-specific files
+.env
+
+# End of https://mrkandreev.name/snippets/gitignore-generator/#Node
