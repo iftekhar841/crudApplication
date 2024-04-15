@@ -1,6 +1,5 @@
 import { Router } from "express";
-import { verifyJWT} from "../middlewares/auth.middleware.js";
-
+import { verifyJWT } from "../middlewares/auth.middleware.js";
 
 const user_route = Router();
 
@@ -15,6 +14,5 @@ user_route.put("/update", verifyJWT, userController.updateUser);
 user_route.delete("/delete", verifyJWT, userController.deleteUser);
 
 user_route.get("/", userController.getAllUsers);
-
 
 export default user_route;
